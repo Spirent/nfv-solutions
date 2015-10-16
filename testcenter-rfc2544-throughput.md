@@ -1,14 +1,22 @@
 # RFC2544 Throughput Test
+
 ## Script name
 testcenter-rfc2544-throughput.py
+
 ## Topology
 Classic east-west, two port topology.
 
-![east-west topology with lab server](./testcenter-rfc2544-throughout.png)
+![east-west topology with lab server](testcenter-rfc2544-throughout.png)
+
+## Test Setup
+The test is designed to be run with a lab server. The lab server, the Spirent TestCenter software on the
+script host, and the Spirent chassis must all be running the same version of TestCenter software, e.g. 4.56.
+
+The lab server, the TestCenter chassis, and a license server must be up and running prior to the execution
+of the test script. 
 
 ## Usage
 ```
-> python testcenter-rfc2544-throughput.py --help
 usage: testcenter-rfc2544-throughput.py [-h] --lab_server_addr LAB_SERVER_ADDR
                                         --license_server_addr
                                         LICENSE_SERVER_ADDR
@@ -119,4 +127,3 @@ optional named arguments:
                         The gateway address to assign to the first emulated
                         device interface on the first west port
 ```
-More
