@@ -6,7 +6,7 @@ testcenter-rfc2544-throughput.py
 ## Topology
 Classic east-west, two port topology.
 
-![east-west topology with lab server](testcenter-rfc2544-throughout.png)
+![east-west topology with lab server](testcenter-rfc2544-throughput.png)
 
 ## Test Setup
 The test is designed to be run with a lab server. The lab server, the Spirent TestCenter software on the
